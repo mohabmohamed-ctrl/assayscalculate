@@ -397,12 +397,14 @@ string  name;
     cout<<"1. 3 items to calculate "<<endl;
     cout<<"2. 5 items to calculate"<<endl;
     cout<<"3. 7 items to calculate"<<endl;
+    cout<<"4.exit"<<endl;
     cout<<"enter how much items do you want:"<<endl;
     cin>>item;
 
    
     switch(item)
     {
+    while(1){
        assays_project ap;
         assays_project2 ap2;
         assays_project3 ap3;
@@ -420,6 +422,10 @@ string  name;
         case 3:
         ap3.items3();
         break;
+        case 4:
+        exit(1);
+        break;
+    }
     }
     
 
